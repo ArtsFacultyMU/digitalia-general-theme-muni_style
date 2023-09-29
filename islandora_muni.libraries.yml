@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      css/islandora_muni_template.css: {}
+      platform_specific/css/style.css: {}
