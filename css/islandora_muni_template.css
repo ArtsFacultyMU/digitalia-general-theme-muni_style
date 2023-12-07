@@ -594,16 +594,16 @@ div.block-views-block-homepage-statistics-block-1 h2 {
 	display: none;
 }
 
-div.block-simple-block-test-copyright p,
-div.block-simple-block-test-jak-citovat-platformu p {
+div.block-simple-blockhomepage-copyright p,
+div.block-simple-blockhow-to-cite-platform p {
 	margin-bottom: .5rem;
 }
 
-div.block-simple-block-test-jak-citovat-platformu {
+div.block-simple-blockhow-to-cite-platform {
 	margin-top: 1rem;
 }
 
-div.block-simple-block-test-copyright {
+div.block-simple-blockhomepage-copyright {
 	padding-top: 3rem;
 	clear: both;
 }
