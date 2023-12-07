@@ -173,6 +173,7 @@ ul.tabs.primary {
 	background-image: inherit;
 	color: #0000DC;
 	background-color: white;
+	border-bottom: #DCDCDC solid 2px;
 }
 
 div.region-header {
@@ -302,7 +303,8 @@ div.region-header input.form-text {
 	}
 }
 
-
+/*
+div.block-superfish a.menu-toggle,
 #block-islandora-muni-main-menu a.menu-toggle {
 	visibility: hidden;
 	position: relative;
@@ -311,6 +313,7 @@ div.region-header input.form-text {
 	margin-bottom: 1rem;
 }
 
+div.block-superfish a.menu-toggle::after,
 #block-islandora-muni-main-menu a.menu-toggle::after {
 	visibility: visible;
 	position: absolute;
@@ -319,11 +322,61 @@ div.region-header input.form-text {
 	letter-spacing: normal;
 	width: 90%;
 	font-weight: bold;
-	font-size: 1.8rem;
+	font-size: 1.3rem;
 	color: #555;
 	content: "\2630";
 }
+*/
 
+ul.sf-menu .sf-sub-indicator {
+	overflow: none;
+	opacity: 1;
+	font-size: small;
+	top: 60%;
+	width: 20px;
+	right: inherit;
+}
+
+ul.sf-menu li.sf-depth-1.menuparent ul {
+	/*
+	border-top: 2px solid;
+	border-image: linear-gradient(to left, grey 50%, transparent 50%) 100% 1;
+	border-left: 2px solid grey;
+	border-right: 2px solid grey;
+	border-bottom: 2px solid grey;*/
+	border: 2px solid grey;
+	border-top: 0;
+	padding: .5rem;
+	background-color: white;
+	width: auto;
+}
+
+.region-primary-menu .menu a.sf-depth-2::before {
+  content: "\02C3\00a0\00a0\00a0";
+  color: grey;
+  font-size: 0.8rem;
+}
+
+ul.sf-menu li.sf-depth-2 {
+	padding-bottom: 1rem;
+}
+
+ul.sf-menu li.sf-depth-2 a.sf-depth-2 {
+	font-size: 1.1rem;
+}
+
+ul.sf-menu.sf-horizontal.sf-shadow ul {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.region-primary-menu .menu {
+	font-size: inherit;
+	white-space: nowrap;
+}
+
+.region-primary-menu .block-superfish ul.menu,
 .region-primary-menu .block-menu ul.menu {
 	margin: .8rem 15px;
 	padding: 0;
@@ -331,37 +384,82 @@ div.region-header input.form-text {
 	display: flex;
 }
 
-.region-primary-menu ul.menu > li.menu-item {
+.region-primary-menu .block-menu .menu {
+	font-size: inherit;
+}
+
+@media (min-width: 901px) {
+  .region-primary-menu .menu-item, body:not(:target) .region-primary-menu .menu-item {
+    padding-right: 2rem;
+  }
+}
+
+
+.region-primary-menu ul.menu > li > span,
+.region-primary-menu ul.menu > li {
 	padding-right: 2rem;
 	float: none;
 	overflow: inherit;
 	margin: 0;
 	display: inline-block;
-	
 }
 
-ul.menu > li.menu-item > a {
+.region-primary-menu ul.menu > li.menuparent {
+	padding-right: 1.4rem;
+}
+
+ul.sf-menu .sf-sub-indicator::after {
+        content: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='13' height='13' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' /></g></svg>");
+        font-weight: bold;
+        padding-left: 0.5rem;
+
+}
+
+
+ul.menu > li > span,
+ul.menu > li > a {
 	font-size: 1.2em;
 	font-weight: 300;
-	color: #555;
+	color: #333;
 }
 
-ul.menu > li.menu-item > a.is-active {
+ul.menu > li > a.is-active {
     color: #000;
     font-weight: bold;
 }
 
+ul.sf-menu a, ul.sf-menu span.nolink {
+	padding: 0;
+	position: inherit;
+}
+
+.region-primary-menu ul.menu > li:nth-last-child(5) {
+        flex-grow: 2;
+}
+
+.region-primary-menu ul.menu > li.menu-item:last-child {
+        padding-right: 0;
+}
+
+.region-primary-menu li.sf-depth-1,
 .region-primary-menu li.menu-item {
 	padding-left: 0;
 	padding-right: 2rem;
 }
 
+.region-primary-menu li.sf-depth-1:last-child,
 .region-primary-menu li.menu-item:last-child {
 	padding-right: 0;
 }
 
+.region-primary-menu .menu span,
 .region-primary-menu .menu a {
 	padding: 0;
+	text-shadow: none;
+}
+
+.region-primary-menu .menu > li > span {
+	padding-top: 4px;
 }
 
 ul.js-facets-widget {
@@ -376,7 +474,7 @@ div.block-facet--dropdown.block,
 div.block-facet--links.block {
 	background-color: white;
 	border: 0;
-	border-top: 2px solid #004899;
+/*	border-top: 2px solid #004899; */
 }
 
 div.block-facet--links ul {
@@ -388,6 +486,145 @@ div.block-facet--links h2 {
 	color: #555;
 }
 
+div.block-simple-blockfront-page-jumbotron {
+	margin-bottom: 2rem;
+}
+
+div.block-simple-blockfront-page-jumbotron > div.content {
+        position: relative;
+        background-image: url('/themes/islandora_muni/platform_specific/images/banner2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        /*height: 23.7vw;*/
+        /* height: 66vw; */
+        height: 25.3vw;
+        max-width: 1170px;
+        /*max-height: 278px;*/
+        /* max-height: 773px; */
+        max-height: 297px;
+        margin: 0 auto;
+        text-align: left;
+}
+
+
+div.block-simple-blockfront-page-jumbotron > div.content > p {
+        transform: translateY(2vw);
+        font-weight: bold;
+        color: white;
+        padding: 1rem;
+}
+
+div.block-simple-blockfront-page-jumbotron > div.content span {
+        width: 100%;
+        font-size: 1.3rem;
+}
+
+div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+        font-size: 3.2rem;
+}
+
+@media (min-width: 1170px) {
+
+        div.block-simple-blockfront-page-jumbotron > div.content span {
+                font-size: 1.3rem;
+        }
+
+        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+                font-size: 3.2rem;
+        }
+
+        div.block-simple-blockfront-page-jumbotron > div.content > p {
+                transform: translateY(30%);
+        }
+}
+
+@media (max-width: 768px) {
+
+        div.block-simple-blockfront-page-jumbotron > div.content span {
+                font-size: 1rem;
+        }
+
+        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+                font-size: 2.6rem;
+        }
+
+        div.block-simple-blockfront-page-jumbotron > div.content > p {
+                transform: translateY(1.5vw);
+                padding: .5rem;
+        }
+
+}
+
+@media (max-width: 560px) {
+        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+                font-size: 1.5rem;
+        }
+
+        div.block-simple-blockfront-page-jumbotron > div.content > p {
+                transform: translateY(1.3vw);
+                padding: .2rem;
+        }
+
+}
+
+@media (max-width: 480px) {
+        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+                font-size: 1.2rem;
+        }
+        div.block-simple-blockfront-page-jumbotron > div.content > p {
+                transform: translateY(0);
+                padding: .1rem;
+        }
+
+}
+
+div.block-views-block-homepage-statistics-block-1 {
+	float: left;
+	margin-right: 2rem;
+	min-height: 7rem;
+	border: 1px dotted black;
+	padding: .5rem 1rem;
+}
+
+div.block-views-block-homepage-statistics-block-1 h2 {
+	margin: 0;
+	padding-top: 0;
+	display: none;
+}
+
+div.block-simple-block-test-copyright p,
+div.block-simple-block-test-jak-citovat-platformu p {
+	margin-bottom: .5rem;
+}
+
+div.block-simple-block-test-jak-citovat-platformu {
+	margin-top: 1rem;
+}
+
+div.block-simple-block-test-copyright {
+	padding-top: 3rem;
+	clear: both;
+}
+
+.copyright-title,
+.citace-title {
+	font-weight: bold;
+}
+
+div.view-digitalia-muni-eva-citations,
+p.howtocite-platform {
+	border: 1px dotted black;
+	padding: 1rem;
+}
+
+div.view-digitalia-muni-eva-citations {
+	margin-top: 1rem;
+}
+
+p.citace-com-note {
+	margin-bottom: 0;
+}
 
 div.feed-icons {
 	display: none;
@@ -400,6 +637,16 @@ footer.site-footer {
 	margin: 1rem 0;
 	padding: 0;
 	border: none;
+}
+
+div.region-footer-first {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-footer div.block-simple-block-test-loga {
+	margin-right: 0;
+	margin-left: auto;
 }
 
 .site-footer .block {
@@ -425,7 +672,26 @@ footer.site-footer {
 	width: 100%; 
 }
 
+.site-footer .block-simple-blockfooter-copyright {
+	flex-grow: 2;
+}
 
+.site-footer .footer-icon {
+	height: 45px;
+	padding-left: 1.5rem;
+}
+
+.site-footer .ics-logo {
+	height: 60px;
+}
+
+.site-footer .citff-logo {
+	height: 60px;
+}
+
+.site-footer .lindat-logo {
+	padding-bottom: 8px;
+}
 
 div.muniweb-bar-cookies__row-main {
         margin: 0 auto;
