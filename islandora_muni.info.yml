@@ -1,7 +1,7 @@
 name: Islandora MUNI
 type: theme
 description: 'Custom theme for Islandora repositories at Masaryk University. Based on Bartik theme.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 base theme: bartik
 libraries:
   - islandora_muni/global-styling
