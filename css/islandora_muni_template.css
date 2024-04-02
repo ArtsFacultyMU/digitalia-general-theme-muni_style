@@ -242,7 +242,7 @@ div.region-header input.button {
 	border-radius: 0;
 	color: white;
 	background-color: white;
-	background-image: url('/themes/islandora_muni/images/magnifier-blue-sm.png');
+	background-image: url('/themes/custom/islandora_muni/images/magnifier-blue-sm.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 2.2rem;
@@ -493,7 +493,7 @@ div.block-simple-blockfront-page-jumbotron {
 
 div.block-simple-blockfront-page-jumbotron > div.content {
         position: relative;
-        background-image: url('/themes/islandora_muni/platform_specific/images/banner2.jpg');
+        background-image: url('/themes/custom/islandora_muni/platform_specific/images/banner2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
