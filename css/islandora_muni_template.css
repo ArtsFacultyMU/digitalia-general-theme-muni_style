@@ -208,6 +208,7 @@ div.region-header {
         flex-wrap: wrap;
 }
 
+#block-islandora-muni-sitelogo,
 #block-sitelogo {
         flex-grow: 1;
 }
@@ -272,7 +273,7 @@ div.region-header input.form-text {
 	display: none;
 }
 
-
+#block-islandora-muni-languageswitcher,
 #block-languageswitcher {
 	clear: none;
 	float: none;
@@ -280,10 +281,14 @@ div.region-header input.form-text {
 	padding-top: 1.2rem;
 }
 
+
+#block-islandora-muni-languageswitcher ul.links,
 #block-languageswitcher ul.links {
 	font-size: 1.3rem;
 }
 
+
+#block-islandora-muni-languageswitcher li.is-active,
 #block-languageswitcher li.is-active {
 	display: none;
 }	
