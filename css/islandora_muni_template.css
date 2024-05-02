@@ -358,7 +358,7 @@ ul.sf-menu li.sf-depth-1.menuparent ul {
 }
 
 .region-primary-menu .menu a.sf-depth-2::before {
-  content: "\02C3\00a0\00a0\00a0";
+  content: "\02C3\00a0\00a0\00a0"; /* bullet point arrow */
   color: grey;
   font-size: 0.8rem;
 }
@@ -415,7 +415,7 @@ ul.sf-menu.sf-horizontal.sf-shadow ul {
 }
 
 ul.sf-menu .sf-sub-indicator::after {
-        content: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='13' height='13' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' /></g></svg>");
+        content: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='13' height='13' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' /></g></svg>"); /* simple arrow down for compound menu items */
         font-weight: bold;
         padding-left: 0.5rem;
 
@@ -466,6 +466,36 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 
 .region-primary-menu .menu > li > span {
 	padding-top: 4px;
+}
+
+#superfish-main-toggle span {
+  display: none;
+}
+
+#superfish-main-toggle {
+  text-decoration: none;
+}
+
+#superfish-main-toggle::before {
+  visibility: visible;
+  margin-left: 15px;
+  width: 90%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #0000DC;
+  content: "\2630"; /* accordion menu icon*/
+}
+
+#superfish-main-accordion {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: left;
+  gap: 10px;
+}
+
+ul.sf-accordion li.sf-depth-1.menuparent ul {
+  border: none;
+  margin-top: 0px;
 }
 
 ul.js-facets-widget {
