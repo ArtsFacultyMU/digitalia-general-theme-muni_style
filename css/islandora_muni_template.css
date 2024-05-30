@@ -751,6 +751,13 @@ div.muniweb-bar-cookies {
   display: none;
 }
 
+@media (min-width: 461px) and (max-width: 900px) {
+  .region-primary-menu .menu {
+    text-align: left;
+  }
+}
+
+
 body.user-logged-in textarea.form-text {
 	background-color: white;
 	color: black;
