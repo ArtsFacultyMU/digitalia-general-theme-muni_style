@@ -626,10 +626,12 @@ div.block-facet--links h2 {
 	color: #555;
 }
 
+.node--type-a3d-platform-homepage div.field--name-field-banner-text,
 div.block-simple-blockfront-page-jumbotron {
 	margin-bottom: 2rem;
 }
 
+.node--type-a3d-platform-homepage .field--name-field-banner-text,
 div.block-simple-blockfront-page-jumbotron > div.content {
         position: relative;
         background-image: url('/themes/custom/islandora_muni/platform_specific/images/banner2.jpg');
@@ -647,7 +649,7 @@ div.block-simple-blockfront-page-jumbotron > div.content {
         text-align: left;
 }
 
-
+p.banner-container,
 div.block-simple-blockfront-page-jumbotron > div.content > p {
         transform: translateY(2vw);
         font-weight: bold;
@@ -655,25 +657,30 @@ div.block-simple-blockfront-page-jumbotron > div.content > p {
         padding: 1rem;
 }
 
+p.banner-container > span,
 div.block-simple-blockfront-page-jumbotron > div.content span {
         width: 100%;
         font-size: 1.3rem;
 }
 
+p.banner-container > span:nth-child(1),
 div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
         font-size: 3.2rem;
 }
 
 @media (min-width: 1170px) {
 
+        p.banner-container > span,
         div.block-simple-blockfront-page-jumbotron > div.content span {
                 font-size: 1.3rem;
         }
 
+        p.banner-container > span:nth-child(1),
         div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
                 font-size: 3.2rem;
         }
 
+        p.banner-container,
         div.block-simple-blockfront-page-jumbotron > div.content > p {
                 transform: translateY(30%);
         }
@@ -681,14 +688,17 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 
 @media (max-width: 768px) {
 
+        p.banner-container > span,
         div.block-simple-blockfront-page-jumbotron > div.content span {
                 font-size: 1rem;
         }
 
+        p.banner-container > span:nth-child(1),
         div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
                 font-size: 2.6rem;
         }
 
+        p.banner-container,
         div.block-simple-blockfront-page-jumbotron > div.content > p {
                 transform: translateY(1.5vw);
                 padding: .5rem;
@@ -697,10 +707,12 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 }
 
 @media (max-width: 560px) {
+        p.banner-container > span:nth-child(1),
         div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
                 font-size: 1.5rem;
         }
 
+        p.banner-container,
         div.block-simple-blockfront-page-jumbotron > div.content > p {
                 transform: translateY(1.3vw);
                 padding: .2rem;
@@ -709,9 +721,11 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 }
 
 @media (max-width: 480px) {
+        p.banner-container > span:nth-child(1),
         div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
                 font-size: 1.2rem;
         }
+        p.banner-container,
         div.block-simple-blockfront-page-jumbotron > div.content > p {
                 transform: translateY(0);
                 padding: .1rem;
@@ -833,6 +847,7 @@ div.region-footer-first {
 }
 
 .site-footer .footer-icon {
+  width: unset;
 	height: 45px;
 	padding-left: 1.5rem;
 }
