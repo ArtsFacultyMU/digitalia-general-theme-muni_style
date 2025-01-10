@@ -615,7 +615,8 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 
 }
 
-div.block-views-block-homepage-statistics-block-1 {
+div.block-views-block-homepage-statistics-block-1,
+div.block-views-blockstats-content-block-2 {
 	float: left;
 	margin-right: 2rem;
 	min-height: 7rem;
@@ -623,7 +624,8 @@ div.block-views-block-homepage-statistics-block-1 {
 	padding: .5rem 1rem;
 }
 
-div.block-views-block-homepage-statistics-block-1 h2 {
+div.block-views-block-homepage-statistics-block-1 h2,
+div.block-views-blockstats-content-block-2 h2 {
 	margin: 0;
 	padding-top: 0;
 	display: none;
