@@ -764,6 +764,7 @@ body.user-logged-in textarea.form-text {
 }
 
 
-
-
+.facets-widget-links ul li.facet-item label .facet-item__value {
+  color: #004899; 
+}
 
