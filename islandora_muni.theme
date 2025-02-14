@@ -1,5 +1,11 @@
 <?php 
 
+$incfile = __DIR__ . '/platform_specific/lib/code_library.inc';
+if (file_exists($incfile)) {
+    include_once $incfile;
+}
+
+
 use Drupal\Core\Cache\CacheableMetadata;
 
 /**
