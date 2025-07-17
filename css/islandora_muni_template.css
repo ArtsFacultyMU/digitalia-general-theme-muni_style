@@ -346,7 +346,7 @@ ul.sf-menu.sf-style-default li {
   background-color: white;
   background: none;
   width: auto;
-  color: black;
+  color: #333;
 }
 
 
@@ -369,7 +369,7 @@ ul.sf-menu a, ul.sf-menu span.nolink {
   padding-top: 0;
   padding-left: 0;
 	position: inherit;
-  color: black;
+  color: #333;
   padding-top: 0;
   padding-bottom: 0;
   background: none;
@@ -439,7 +439,7 @@ ul.sf-menu.sf-horizontal.sf-shadow ul {
   }
 
   ul.sf-menu.sf-style-default a, ul.sf-menu.sf-style-default a:visited {
-    color: black;
+    color: #333;
   }
 }
 
@@ -503,10 +503,6 @@ ul.menu > li > a.is-active {
 	padding: 0;
 	text-shadow: none;
   margin: 0;
-}
-
-.region-primary-menu .menu > li > span {
-	padding-top: 4px;
 }
 
 .sf-accordion-toggle span {
