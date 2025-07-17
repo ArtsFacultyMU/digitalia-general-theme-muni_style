@@ -226,7 +226,7 @@ div.region-header h2 {
 div.region-header form,
 div.region-header div.form--inline {
 	display: flex;
-	margin-top: 1rem;
+	margin-top: 0;
 }
 
 div.region-header div.form-item {
@@ -278,8 +278,8 @@ div.region-header input.form-text {
 #block-languageswitcher {
 	clear: none;
 	float: none;
-	padding-left: 2rem;
-	padding-top: 1.2rem;
+	padding-left: 1rem;
+	padding-top: .3rem;
 }
 
 
