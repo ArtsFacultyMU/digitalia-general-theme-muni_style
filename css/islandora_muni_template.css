@@ -12,6 +12,10 @@ body {
     max-width: 1200px;
 }
 
+#header .layout-container {
+  margin-bottom: 3px;
+}
+
 div.layout-main-wrapper {
 	border-bottom: 1px solid #ddd;
 }
