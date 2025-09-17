@@ -357,18 +357,37 @@ ul.sf-menu li.sf-depth-1.menuparent ul {
 	margin-top: -5px;
 }
 
+
+ul.sf-menu li.sf-depth-2.menuparent ul {
+  border-top: #DCDCDC solid 2px;
+}
+
+.region-primary-menu .menu a.sf-depth-3::before,
+.region-primary-menu .menu span.sf-depth-2::before,
 .region-primary-menu .menu a.sf-depth-2::before {
   content: "\02C3\00a0\00a0\00a0"; /* bullet point arrow */
   color: grey;
   font-size: 0.8rem;
 }
 
+ul.sf-menu li.sf-depth-3,
 ul.sf-menu li.sf-depth-2 {
 	padding-bottom: 1rem;
 }
 
+ul.sf-menu li.sf-depth-2 span.sf-depth-2,
+ul.sf-menu li.sf-depth-3 a.sf-depth-3,
 ul.sf-menu li.sf-depth-2 a.sf-depth-2 {
 	font-size: 1.1rem;
+}
+
+ul.sf-menu li.sf-depth-2 span span.sf-sub-indicator {
+  display: none;
+}
+
+li.sf-depth-2 > span.sf-depth-2 {
+  color: #333;
+  font-size: 1.1rem;
 }
 
 ul.sf-menu.sf-horizontal.sf-shadow ul {
@@ -422,8 +441,8 @@ ul.sf-menu .sf-sub-indicator::after {
 }
 
 
-ul.menu > li > span,
-ul.menu > li > a {
+ul.sf-menu > li > span,
+ul.sf-menu > li > a {
 	font-size: 1.2em;
 	font-weight: 300;
 	color: #333;
@@ -447,12 +466,14 @@ ul.sf-menu a, ul.sf-menu span.nolink {
         padding-right: 0;
 }
 
+.region-primary-menu li.sf-depth-2,
 .region-primary-menu li.sf-depth-1,
 .region-primary-menu li.menu-item {
 	padding-left: 0;
 	padding-right: 2rem;
 }
 
+.region-primary-menu li.sf-depth-2:last-child,
 .region-primary-menu li.sf-depth-1:last-child,
 .region-primary-menu li.menu-item:last-child {
 	padding-right: 0;
