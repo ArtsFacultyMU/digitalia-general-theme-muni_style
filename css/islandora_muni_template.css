@@ -12,6 +12,10 @@ body {
     max-width: 1200px;
 }
 
+#header .layout-container {
+  margin-bottom: 3px;
+}
+
 div.layout-main-wrapper {
 	border-bottom: 1px solid #ddd;
 }
@@ -223,9 +227,10 @@ div.region-header h2 {
 }
 
 
+div.region-header form,
 div.region-header div.form--inline {
 	display: flex;
-	margin-top: 1rem;
+	margin-top: 0;
 }
 
 div.region-header div.form-item {
@@ -277,8 +282,8 @@ div.region-header input.form-text {
 #block-languageswitcher {
 	clear: none;
 	float: none;
-	padding-left: 2rem;
-	padding-top: 1.2rem;
+	padding-left: 1rem;
+	padding-top: .3rem;
 }
 
 
@@ -296,18 +301,6 @@ div.region-header input.form-text {
 
 
 /* menu */
-@media (min-width: 461px) and (max-width: 900px) {
-	.region-primary-menu .menu-item, body:not(:target) .region-primary-menu .menu-item {
-		width: auto;
-		margin: 0 1px;
-		padding: 0 1px;
-	}
-
-	.region-primary-menu .menu {
-		padding: 0 15px;
-	}
-}
-
 /*
 div.block-superfish a.menu-toggle,
 #block-islandora-muni-main-menu a.menu-toggle {
@@ -340,6 +333,56 @@ ul.sf-menu .sf-sub-indicator {
 	top: 60%;
 	width: 20px;
 	right: inherit;
+}
+
+.sfHover,
+ul.sf-menu.sf-style-default li li a:hover,
+ul.sf-menu.sf-style-default li a:hover,
+ul.sf-menu.sf-style-default li:hover a,
+ul.sf-menu.sf-style-default li:hover, 
+ul.sf-menu.sf-style-default li li:hover a,
+ul.sf-menu.sf-style-default li li:hover,
+ul.sf-menu.sf-style-default li li a,
+ul.sf-menu.sf-style-default li li,
+ul.sf-menu.sf-style-default li a,
+ul.sf-menu.sf-style-default li {
+  border: none;
+  background-color: white;
+  background: none;
+  width: auto;
+  color: #333;
+}
+
+
+ul.sf-menu.sf-style-default a,
+ul.sf-menu.sf-style-default a:visited,
+ul.sf-menu.sf-style-default a:hover,
+ul.sf-menu.sf-style-default a.is-active {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+  background: none;
+}
+
+
+
+ul.sf-menu.sf-style-default span.nolink:hover,
+ul.sf-menu.sf-style-default span.nolink,
+ul.sf-menu a, ul.sf-menu span.nolink {
+	padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+	position: inherit;
+  color: #333;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;
+}
+
+
+ul.sf-menu.sf-style-default a.is-active {
+  color: black;
+  background-color: white;
 }
 
 ul.sf-menu li.sf-depth-1.menuparent ul {
@@ -417,6 +460,10 @@ ul.sf-menu.sf-horizontal.sf-shadow ul {
   .region-primary-menu .menu-item, body:not(:target) .region-primary-menu .menu-item {
     padding-right: 2rem;
   }
+
+  ul.sf-menu.sf-style-default a, ul.sf-menu.sf-style-default a:visited {
+    color: #333;
+  }
 }
 
 
@@ -453,10 +500,7 @@ ul.menu > li > a.is-active {
     font-weight: bold;
 }
 
-ul.sf-menu a, ul.sf-menu span.nolink {
-	padding: 0;
-	position: inherit;
-}
+
 
 .region-primary-menu ul.menu > li:nth-last-child(5) {
         flex-grow: 2;
@@ -483,18 +527,25 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 .region-primary-menu .menu a {
 	padding: 0;
 	text-shadow: none;
-}
-
-.region-primary-menu .menu > li > span {
-	padding-top: 4px;
+  margin: 0;
 }
 
 .sf-accordion-toggle span {
   display: none;
 }
 
+ul.sf-menu.sf-style-default.sf-accordion li.sf-expanded,
+ul.sf-menu.sf-style-default a, ul.sf-menu.sf-style-default a:visited {
+  color: black;
+  background: none;
+}
+
 .sf-accordion-toggle a {
   text-decoration: none;
+}
+
+.sf-accordion-toggle a::after {
+  display: none;
 }
 
 .sf-accordion-toggle a::before {
@@ -505,6 +556,16 @@ ul.sf-menu a, ul.sf-menu span.nolink {
   font-size: 1.8rem;
   color: #0000DC;
   content: "\2630";
+  background: none;
+}
+
+div.sf-accordion-toggle.sf-style-default a {
+  background: none;
+  color: #0000DC;
+}
+
+div.sf-accordion-toggle.sf-style-default a.sf-expanded {
+  background: none;
 }
 
 .sf-accordion {
@@ -518,6 +579,27 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
   border: none;
   margin-top: 0px;
 }
+
+@media (min-width: 461px) and (max-width: 900px) {
+	.region-primary-menu .menu-item, body:not(:target) .region-primary-menu .menu-item {
+		width: auto;
+		margin: 0 1px;
+		padding: 0 1px;
+	}
+
+	.region-primary-menu .menu {
+		padding: 0 15px;
+	}
+}
+
+
+@media (max-width: 900px) {
+  ul.sf-accordion li.sf-depth-1.menuparent ul {
+    border: solid 2px lightgray;
+  }
+}
+
+
 
 ul.js-facets-widget {
 	padding-bottom: 1.5rem;
@@ -790,4 +872,14 @@ body.user-logged-in textarea.form-text {
 .facets-widget-links ul li.facet-item label .facet-item__value {
   color: #004899; 
 }
+
+.field--type-entity-reference {
+  margin: 0;
+}
+
+.field--type-entity-reference .field__label {
+  font-weight: bold;
+}
+
+
 
