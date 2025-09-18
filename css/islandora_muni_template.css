@@ -85,7 +85,7 @@ a[href^=tel] {
     font-weight:inherit;
 }
 
-.button {
+.button, .button:visited {
     background-color: #004899;
     color: white;
     font-weight: bold;
