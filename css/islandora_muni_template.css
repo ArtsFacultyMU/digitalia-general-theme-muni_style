@@ -501,10 +501,11 @@ ul.menu > li > a.is-active {
 }
 
 
-
+/* this should go to platform specific changes 
 .region-primary-menu ul.menu > li:nth-last-child(5) {
         flex-grow: 2;
 }
+*/
 
 .region-primary-menu ul.menu > li.menu-item:last-child {
         padding-right: 0;
