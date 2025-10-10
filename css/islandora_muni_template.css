@@ -749,6 +749,12 @@ div.block-simple-blockhomepage-copyright {
 	clear: both;
 }
 
+img.license_icon {
+  width: 120px;
+  height: 42px;
+  margin-right: 1rem;
+}
+
 .copyright-title,
 .citace-title {
 	font-weight: bold;
