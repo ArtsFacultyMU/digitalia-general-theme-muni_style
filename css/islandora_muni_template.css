@@ -735,6 +735,14 @@ div.block-views-blockstats-content-block-2 h2 {
 	display: none;
 }
 
+div.block-views-block-homepage-statistics-block-1 div.view-content,
+div.block-views-blockstats-content-block-2 div.view-content {
+	padding-top: .5rem;
+}
+
+
+
+
 div.block-simple-blockhomepage-copyright p,
 div.block-simple-blockhow-to-cite-platform p {
 	margin-bottom: .5rem;
