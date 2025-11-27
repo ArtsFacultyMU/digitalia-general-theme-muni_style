@@ -600,6 +600,21 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
   }
 }
 
+div.region-sidebar-first select,
+div.region-sidebar-first form div.form-item {
+  width: 14.4rem;
+}
+
+
+div.region-sidebar-first form div.form-item input {
+  background-color: white; 
+}
+
+div.region-sidebar-first div.block-facets {
+  border-color: #f9f9f9;
+  background-color: #f6f6f2;
+}
+
 
 
 ul.js-facets-widget {
