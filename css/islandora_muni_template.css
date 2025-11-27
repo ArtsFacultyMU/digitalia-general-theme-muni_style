@@ -254,6 +254,7 @@ div.region-header input.button {
 	width: 2.2rem;
 	text-align: left;
 	box-shadow: none;
+  color: transparent;
 }
 
 div.region-header input.form-text {
