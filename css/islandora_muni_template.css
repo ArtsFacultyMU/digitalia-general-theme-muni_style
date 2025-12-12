@@ -401,6 +401,9 @@ ul.sf-menu li.sf-depth-1.menuparent ul {
 	margin-top: -5px;
 }
 
+ul.sf-menu li.sf-depth-1 a {
+  padding: 0;
+}
 
 ul.sf-menu li.sf-depth-2.menuparent ul {
   border-top: #DCDCDC solid 2px;
