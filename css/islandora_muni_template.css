@@ -437,6 +437,10 @@ li.sf-depth-2 > span.sf-depth-2 {
   font-size: 1.1rem;
 }
 
+ul.sf-menu.sf-style-default li.sf-depth-2 {
+  width: inherit;
+}
+
 ul.sf-menu.sf-horizontal.sf-shadow ul {
 	box-shadow: none;
 	-webkit-box-shadow: none;
