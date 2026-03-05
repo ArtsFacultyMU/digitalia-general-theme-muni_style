@@ -922,3 +922,22 @@ body.user-logged-in textarea.form-text {
 .form-item .description {
   margin: 0;
 }
+
+/* login */
+nav.navigation.menu--account,
+#block-islandora-muni-languageswitcher,
+#block-languageswitcher {
+	float: none;
+	padding-left: 1rem;
+}
+
+nav.navigation.menu--account {
+	width: auto;
+}
+
+nav.navigation.menu--account a {
+	font-size: 1.3rem;
+	padding: 0;
+  padding-top: 1.2rem;
+  color: #0000DC;
+}
