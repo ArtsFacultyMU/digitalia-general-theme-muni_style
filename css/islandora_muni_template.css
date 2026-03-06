@@ -299,6 +299,10 @@ div.region-header input.form-text {
 	display: none;
 }	
 
+/* tooltips always on top */
+span.tooltip {
+  z-index: 500;
+}
 
 
 /* menu */
