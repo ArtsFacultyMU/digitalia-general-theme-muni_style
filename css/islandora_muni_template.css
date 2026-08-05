@@ -722,14 +722,18 @@ div.block-facet--links h2 {
 }
 
 .node--type-a3d-platform-homepage div.field--name-field-banner-text,
-div.block-simple-blockfront-page-jumbotron {
+div[class$="jumbotron"] {
 	margin-bottom: 2rem;
 }
 
 .node--type-a3d-platform-homepage .field--name-field-banner-text,
-div.block-simple-blockfront-page-jumbotron > div.content {
+div[class$="jumbotron"] > div.content {
+  background-image: url('/themes/custom/islandora_muni/platform_specific/images/banner2.jpg');
+}
+
+.node--type-a3d-platform-homepage .field--name-field-banner-text,
+div[class$="jumbotron"] > div.content {
         position: relative;
-        background-image: url('/themes/custom/islandora_muni/platform_specific/images/banner2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -745,7 +749,7 @@ div.block-simple-blockfront-page-jumbotron > div.content {
 }
 
 p.banner-container,
-div.block-simple-blockfront-page-jumbotron > div.content > p {
+div[class$="jumbotron"] > div.content > p {
         transform: translateY(2vw);
         font-weight: bold;
         color: white;
@@ -753,30 +757,30 @@ div.block-simple-blockfront-page-jumbotron > div.content > p {
 }
 
 p.banner-container > span,
-div.block-simple-blockfront-page-jumbotron > div.content span {
+div[class$="jumbotron"] > div.content span {
         width: 100%;
         font-size: 1.3rem;
 }
 
 p.banner-container > span:nth-child(1),
-div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+div[class$="jumbotron"] > div.content span:nth-child(1) {
         font-size: 3.2rem;
 }
 
 @media (min-width: 1170px) {
 
         p.banner-container > span,
-        div.block-simple-blockfront-page-jumbotron > div.content span {
+        div[class$="jumbotron"] > div.content span {
                 font-size: 1.3rem;
         }
 
         p.banner-container > span:nth-child(1),
-        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+        div[class$="jumbotron"] > div.content span:nth-child(1) {
                 font-size: 3.2rem;
         }
 
         p.banner-container,
-        div.block-simple-blockfront-page-jumbotron > div.content > p {
+        div[class$="jumbotron"] > div.content > p {
                 transform: translateY(30%);
         }
 }
@@ -784,17 +788,17 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 @media (max-width: 768px) {
 
         p.banner-container > span,
-        div.block-simple-blockfront-page-jumbotron > div.content span {
+        div[class$="jumbotron"] > div.content span {
                 font-size: 1rem;
         }
 
         p.banner-container > span:nth-child(1),
-        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+        div[class$="jumbotron"] > div.content span:nth-child(1) {
                 font-size: 2.6rem;
         }
 
         p.banner-container,
-        div.block-simple-blockfront-page-jumbotron > div.content > p {
+        div[class$="jumbotron"] > div.content > p {
                 transform: translateY(1.5vw);
                 padding: .5rem;
         }
@@ -803,12 +807,12 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 
 @media (max-width: 560px) {
         p.banner-container > span:nth-child(1),
-        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+        div[class$="jumbotron"] > div.content span:nth-child(1) {
                 font-size: 1.5rem;
         }
 
         p.banner-container,
-        div.block-simple-blockfront-page-jumbotron > div.content > p {
+        div[class$="jumbotron"] > div.content > p {
                 transform: translateY(1.3vw);
                 padding: .2rem;
         }
@@ -817,11 +821,11 @@ div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
 
 @media (max-width: 480px) {
         p.banner-container > span:nth-child(1),
-        div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+        div[class$="jumbotron"] > div.content span:nth-child(1) {
                 font-size: 1.2rem;
         }
         p.banner-container,
-        div.block-simple-blockfront-page-jumbotron > div.content > p {
+        div[class$="jumbotron"] > div.content > p {
                 transform: translateY(0);
                 padding: .1rem;
         }
@@ -853,21 +857,21 @@ div.block-simple-blockhomepage-text {
   margin-bottom: 3rem;
 }
 
-div.block-simple-blockfront-page-keywords p,
-div.block-simple-blockhomepage-copyright p,
-div.block-simple-blockhow-to-cite-platform p {
+div[class$="keywords"] p,
+div[class$="copyright"] p,
+div[class$="how-to-cite-platform"] p,
+div[class$="spi"] p {
 	margin-bottom: .5rem;
 }
 
-div.block-simple-blockfront-page-keywords,
-div.block-simple-blockhomepage-copyright,
-div.block-simple-blockhow-to-cite-platform {
+div[class$="keywords"],
+div[class$="copyright"],
+div[class$="how-to-cite-platform"],
+div[class$="spi"] {
 	margin-top: 1rem;
 }
 
-div.block-simple-blockfront-page-keywords, 
-div.block-simple-blockhomepage-copyright, 
-div.block-simple-blockhow-to-cite-platform {
+div[class$="keywords"] {
 	clear: both;
 }
 
@@ -883,11 +887,11 @@ img.license_icon {
 	font-weight: bold;
 }
 
-div.block-simple-blockfrontpage-spi {
+div[class$="spi"] {
   margin-top: 1rem;
 }
 
-div.block-simple-blockfrontpage-spi span.spi-label {
+div[class$="spi"] span.spi-label {
   font-weight: bold;
 }
 
