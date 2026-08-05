@@ -279,6 +279,69 @@ div.region-header input.form-text {
 	display: none;
 }
 
+#edit-lang-dropdown-select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+@supports (appearance: base-select) {
+#edit-lang-dropdown-select {
+  &, &::picker(select){
+    appearance: base-select;
+  }
+}
+}
+
+#edit-lang-dropdown-select {
+  background: white;
+  border: none;
+  border-radius: 0;
+  color: #0000DC;
+  font-size: 1.3rem;
+  width: 7.5rem !important;
+  margin-left: 1rem;
+  margin-top: 3px;
+  height: 2rem;
+}
+
+@supports (appearance: base-select) {
+
+  #edit-lang-dropdown-select {
+    height: unset;  
+    width: 8.5rem !important;
+    margin-top: 0;
+  }
+
+  #edit-lang-dropdown-select::picker-icon {
+    content: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='13' height='13' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' /></g></svg>"); /* simple arrow down for compound menu items */
+  }
+}
+
+
+#edit-lang-dropdown-select {
+  padding-left: 1.7rem;
+background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'>\
+<circle cx='8' cy='8' r='6' fill='none' stroke='%230000DC' stroke-width='0.6'/>\
+<path d='M2.5 6h11M2.5 10h11' stroke='%230000DC' stroke-width='0.6' fill='none'/>\
+<path d='M8 2c2.6 1.8 2.6 10.2 0 12 M8 2c-2.6 1.8 -2.6 10.2 0 12' stroke='%230000DC' stroke-width='0.6' fill='none'/>\
+</svg>");
+  background-repeat: no-repeat;
+  background-position: 0rem center;
+  background-size: 1.3rem 1.3rem;
+}
+
+#edit-lang-dropdown-select option {
+  font-size: 1.1rem;
+  color: #0000DC;
+}
+
+#edit-lang-dropdown-select option:hover {
+  background-color: #0000DC;
+  color: white;
+}
+
+
 #block-islandora-muni-languageswitcher,
 #block-languageswitcher {
 	clear: none;
@@ -287,6 +350,11 @@ div.region-header input.form-text {
 	padding-top: .3rem;
 }
 
+#block-islandora-muni-languageswitcher ul.links::before,
+#block-languageswitcher ul.links::before {
+  content: "\1F310\FE0E";
+  color: #0000DC; 
+}
 
 #block-islandora-muni-languageswitcher ul.links,
 #block-languageswitcher ul.links {
@@ -781,20 +849,25 @@ div.block-views-blockstats-content-block-2 div.view-content {
 	padding-top: .5rem;
 }
 
+div.block-simple-blockhomepage-text {
+  margin-bottom: 3rem;
+}
 
-
-
+div.block-simple-blockfront-page-keywords p,
 div.block-simple-blockhomepage-copyright p,
 div.block-simple-blockhow-to-cite-platform p {
 	margin-bottom: .5rem;
 }
 
+div.block-simple-blockfront-page-keywords,
+div.block-simple-blockhomepage-copyright,
 div.block-simple-blockhow-to-cite-platform {
 	margin-top: 1rem;
 }
 
-div.block-simple-blockhomepage-copyright {
-	padding-top: 3rem;
+div.block-simple-blockfront-page-keywords, 
+div.block-simple-blockhomepage-copyright, 
+div.block-simple-blockhow-to-cite-platform {
 	clear: both;
 }
 
@@ -804,10 +877,28 @@ img.license_icon {
   margin-right: 1rem;
 }
 
+.keywords-title,
 .copyright-title,
 .citace-title {
 	font-weight: bold;
 }
+
+div.block-simple-blockfrontpage-spi {
+  margin-top: 1rem;
+}
+
+div.block-simple-blockfrontpage-spi span.spi-label {
+  font-weight: bold;
+}
+
+
+/* TODO: at hiomepage of arnenovak-devel, there is some content, 
+I don't know why it is there, this is just a small redesign, to put it in line
+*/
+body.path-frontpage div.block-system-main-block div.view-content {
+  display: flex;
+}
+
 
 div.view-digitalia-muni-eva-citations,
 p.howtocite-platform {
