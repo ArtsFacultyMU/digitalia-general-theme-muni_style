@@ -1,4 +1,7 @@
 <?php 
+/* Please do not put any code inside this file! */
+/* Any hooks etc. should go inside platform_specifics/includes/hooks.php */
+
 
 $digitalia_theme_hooks_file = __DIR__ . '/platform_specifics/includes/hooks.php';
 
