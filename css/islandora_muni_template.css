@@ -857,6 +857,27 @@ div.block-simple-blockhomepage-text {
   margin-bottom: 3rem;
 }
 
+@media only screen and (min-width: 30rem) {
+div.block-simple-blockfront-page-keywords-and-spi > div.content {
+  display: flex;
+}
+
+div.block-simple-blockfront-page-keywords-and-spi 
+> div.content > div.front-page-keywords {
+  width: 50%;
+  border-right: 1px solid black;
+  padding-right: 1rem;
+}
+
+div.block-simple-blockfront-page-keywords-and-spi 
+> div.content > div.front-page-spi {
+  width: 50%;
+  padding-left: 1rem;
+}
+}
+
+
+
 div[class$="keywords"] p,
 div[class$="copyright"] p,
 div[class$="how-to-cite-platform"] p,
@@ -934,6 +955,7 @@ footer.site-footer {
 div.region-footer-first {
 	display: flex;
 	justify-content: space-between;
+  margin: 0 1rem;
 }
 
 .site-footer div.block-simple-block-test-loga {
