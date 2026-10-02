@@ -950,7 +950,7 @@ footer.site-footer {
 	background-color: white;
 	color: black;
 	padding: 0;
-	margin: 1rem 0;
+	margin: 0;
 	padding: 0;
 	border: none;
 }
@@ -958,7 +958,7 @@ footer.site-footer {
 div.region-footer-first {
 	display: flex;
 	justify-content: space-between;
-  margin: 0 1rem;
+  margin: 0;
 }
 
 .site-footer div.block-simple-block-test-loga {
@@ -967,7 +967,7 @@ div.region-footer-first {
 }
 
 .site-footer .block {
-	margin: 0;
+	margin: 0 1rem;
 	padding: 0;
 	border: none;
 }
