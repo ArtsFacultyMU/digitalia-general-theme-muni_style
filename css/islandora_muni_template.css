@@ -680,6 +680,17 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
   }
 }
 
+div.block-current-collection-block {
+  margin-top: .2rem;
+}
+
+div.block-current-collection-block > div.content {
+  margin: 0;
+  padding: .2rem .4rem;
+  font-weight: bold;
+  background-color: lightgreen;
+}
+
 div.region-sidebar-first select,
 div.region-sidebar-first form div.form-item {
   width: 14.4rem;
