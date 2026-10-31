@@ -840,7 +840,16 @@ div.block-views-blockstats-content-block-2 {
 	min-height: 7rem;
 	border: 1px dotted black;
 	padding: .5rem 1rem;
+  align-content: center;
 }
+
+:is (div.block-views-blockdigitalia-statistics-block-1,
+div.block-views-block-homepage-statistics-block-1,
+div.block-views-blockstats-content-block-2) .block .content {
+  margin:0;
+}
+
+
 
 div.block-views-blockdigitalia-statistics-block-1 h2,
 div.block-views-block-homepage-statistics-block-1 h2,
