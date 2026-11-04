@@ -684,11 +684,10 @@ div.block-current-collection-block {
   margin-top: .2rem;
 }
 
-div.block-current-collection-block > div.content {
+div.block-current-collection-block > div.content > div {
   margin: 0;
-  padding: .2rem .4rem;
-  font-weight: bold;
-  background-color: lightgreen;
+  background-color: #afcfaf;
+  padding: .2rem .5rem;
 }
 
 div.region-sidebar-first select,
@@ -1099,4 +1098,14 @@ nav.navigation.menu--account a {
 	/* padding: 0; */
   /* padding-top: 1.2rem; */
   color: #0000DC;
+}
+
+.current-collection-remove-button {
+  float: right;
+  padding-right: 0.2rem;
+}
+
+.current-collection-message {
+  padding-left: 0.2rem;
+  font-weight: bold;
 }
