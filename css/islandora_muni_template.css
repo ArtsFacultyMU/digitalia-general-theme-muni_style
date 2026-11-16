@@ -680,6 +680,16 @@ ul.sf-accordion li.sf-depth-1.menuparent ul {
   }
 }
 
+div.block-current-collection-block {
+  margin-top: .2rem;
+}
+
+div.block-current-collection-block > div.content > div {
+  margin: 0;
+  background-color: #afcfaf;
+  padding: .2rem .5rem;
+}
+
 div.region-sidebar-first select,
 div.region-sidebar-first form div.form-item {
   width: 14.4rem;
@@ -840,7 +850,16 @@ div.block-views-blockstats-content-block-2 {
 	min-height: 7rem;
 	border: 1px dotted black;
 	padding: .5rem 1rem;
+  align-content: center;
 }
+
+:is (div.block-views-blockdigitalia-statistics-block-1,
+div.block-views-block-homepage-statistics-block-1,
+div.block-views-blockstats-content-block-2) .block .content {
+  margin:0;
+}
+
+
 
 div.block-views-blockdigitalia-statistics-block-1 h2,
 div.block-views-block-homepage-statistics-block-1 h2,
@@ -1079,4 +1098,14 @@ nav.navigation.menu--account a {
 	/* padding: 0; */
   /* padding-top: 1.2rem; */
   color: #0000DC;
+}
+
+.current-collection-remove-button {
+  float: right;
+  padding-right: 0.2rem;
+}
+
+.current-collection-message {
+  padding-left: 0.2rem;
+  font-weight: bold;
 }
